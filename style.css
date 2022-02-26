@@ -1,0 +1,434 @@
+/* Mobile devices */
+body {
+  background-color: #212d3f;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #1c1c1c;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo-and-menu-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo a {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.logo .fas {
+  font-size: 1.5rem;
+}
+
+.logo .logo-text {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.links {
+  display: none;
+}
+
+.menu-btn {
+  border: none;
+  background-color: #1c1c1c;
+  margin: 10px;
+}
+
+.menu-btn .fas {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links-container {
+  display: none;
+  justify-content: center;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links-container ul li {
+  margin: 15px 0px;
+}
+
+.nav-links-container ul li a {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  text-decoration: none;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.nav-links-container ul li a:hover {
+  background-color: white;
+  color: #1c1c1c;
+}
+
+footer {
+  background-color: #1c1c1c;
+  min-height: 75px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #a0a0a0;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.heroBoxes-container {
+  margin-top: 46px;
+  /* WATCH THIS! */
+  max-height: 600px;
+}
+
+.heroBox1 {
+  background-image: url("images/code-herobox-1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 275px;
+  width: 100%;
+}
+
+.heroBox1 h1 {
+  display: none;
+}
+
+.heroBox1 p {
+  display: none;
+}
+
+.heroBox2 {
+  padding: 25px 15px 10px 15px;
+}
+
+.heroBox2 h1 {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.heroBox2 p {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+.card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card1-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card2-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card3-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.cards-container i {
+  font-size: 40px;
+  color: white;
+  margin-top: 40px;
+}
+
+.cards-container h2 {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.cards-container p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+
+.btn-all-courses {
+  padding: 5px 0px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.btn-all-courses {
+  color: white;
+}
+
+.btn-all-courses:hover {
+  background-color: white;
+  color: #212d3f;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+.testimonials-title {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.textBox {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.textBox p:last-of-type {
+  font-size: 0.8rem;
+  padding-top: 7px;
+  padding-left: 30px;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------------- */
+.courses-title {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 1rem;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.course-text-box {
+  min-height: 200px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: #212d3f;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.course-text-box h4,
+p {
+  margin-top: 5px;
+}
+
+.course-text-box .course-bold {
+  font-weight: 700;
+}
+
+.course-text-box p:last-of-type {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  text-align: right;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+.maps {
+  text-align: center;
+}
+
+iframe {
+  width: 100%;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  min-height: 450px;
+}
+
+/* iPads, tablets */
+@media screen and (min-width: 481px) {
+  .heroBox2 {
+    display: none;
+  }
+
+  .heroBox1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+      url("images/code-herobox-1.png");
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+  }
+
+  .heroBox1 h1 {
+    display: block;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .heroBox1 p {
+    display: block;
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px 60px 10px;
+  }
+
+  .cards-container {
+    margin-top: 15px;
+  }
+
+  .btn-all-courses {
+    font-size: 1.4rem;
+  }
+
+  .textBox {
+    width: 47%;
+  }
+
+  .course-text-box {
+    width: 47%;
+  }
+
+  iframe {
+    width: 90%;
+    padding: 0px 10px 50px 10px;
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) {
+  .logo {
+    padding-left: 10px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-btn .fas {
+    display: none;
+  }
+
+  .links {
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-family: "Roboto Mono", monospace;
+    margin-bottom: 2px;
+  }
+
+  .links a {
+    padding: 8px 8px;
+  }
+
+  .links a:hover {
+    background-color: white;
+    color: #1c1c1c;
+  }
+
+  .textBox {
+    width: 30%;
+  }
+
+  .course-text-box {
+    width: 30%;
+  }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1025px) {
+  .logo {
+    padding-left: 20px;
+  }
+
+  .links {
+    display: block;
+    padding: 10px 30px;
+  }
+}
+
+/* Extra large screens, TV */
+@media screen and (min-width: 1201px) {
+  .logo {
+    padding-left: 30px;
+  }
+}
