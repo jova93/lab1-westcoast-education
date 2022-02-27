@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WestCoast Education</title>
+    <title>Våra kurser</title>
     <link rel="stylesheet" href="css-reset.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,8 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="cart.css" />
   </head>
   <body>
     <div class="container">
@@ -33,6 +35,16 @@
           <div class="links">
             <a href="courses.html">Kurser</a>
             <a href="about.html">Om Oss</a>
+
+            <!-- CART -->
+            <div class="cart">
+              <!-- CART BUTTON -->
+              <button class="navbar-toggler" type="button" id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+
+              <!-- CART CONTAINER -->
+            </div>
           </div>
 
           <!-- NAV -->
@@ -53,6 +65,9 @@
             <li>
               <a href="about.html">Om Oss</a>
             </li>
+            <li>
+              <a><i class="fas fa-shopping-cart"></i></a>
+            </li>
           </ul>
         </div>
       </header>
@@ -61,7 +76,7 @@
         <div class="heroBoxes-container">
           <!-- HEROBOX1 -->
           <div class="heroBox1">
-            <h1>Aktuella kurser</h1>
+            <h1>Våra kurser</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perferendis iure placeat amet, optio dolore recusandae itaque
@@ -70,7 +85,7 @@
           </div>
           <!-- HEROBOX2 -->
           <div class="heroBox2">
-            <h1>Aktuella kurser</h1>
+            <h1>Våra kurser</h1>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Perferendis iure placeat amet, optio dolore recusandae itaque
@@ -80,103 +95,74 @@
         </div>
       </main>
 
-      <h3 class="courses-title">Populära kurser:</h3>
+      <h3 class="popular-courses-title">Populära kurser:</h3>
 
-      <div class="courses">
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 001</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            sapiente, perspiciatis commodi obcaecati nulla aut delectus,
-            dolorum, assumenda dignissimos facilis quod id et explicabo
-            perferendis.
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 002</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-            doloribus sint, quae quisquam voluptate atque quis veniam natus
-            deleniti eius.
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 003</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            et inventore! Dolorum natus, earum consequatur alias quidem nisi
-            delectus expedita nemo, debitis laudantium quia in?
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
+      <div class="popular-courses" id="popularCourses">
+        <!-- Populära kurser -->
       </div>
 
-      <h3 class="courses-title">Aktuella kurser:</h3>
+      <h3 class="actual-courses-title">Aktuella kurser:</h3>
 
-      <div class="courses">
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 001</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            sapiente, perspiciatis commodi obcaecati nulla aut delectus,
-            dolorum, assumenda dignissimos facilis quod id et explicabo
-            perferendis.
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 002</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
-            doloribus sint, quae quisquam voluptate atque quis veniam natus
-            deleniti eius.
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 003</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            et inventore! Dolorum natus, earum consequatur alias quidem nisi
-            delectus expedita nemo, debitis laudantium quia in?
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 004</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nemo
-            at placeat unde! Esse, quis.
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 005</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-            cum officia tenetur qui voluptatem debitis?
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
-        </div>
-        <div class="course-text-box">
-          <h4><span class="course-bold">Kursnr:</span> 006</h4>
-          <h4><span class="course-bold">Kurstitel:</span> Lorem, ipsum dolor.</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
-            nisi?
-          </p>
-          <p><span class="course-bold">Längd:</span> 00 h 00 min</p>
+      <div class="actual-courses" id="actualCourses">
+        <!-- Aktuella kurser -->
+      </div>
+
+      <!-- Trigger/Open The Modal -->
+      <!-- Hide this button if not ADMIN -->
+      <div class="modal-btn-container">
+        <button class="open-modal-btn" id="openModalBtn">Lägg till kurs</button>
+      </div>
+
+      <!-- The Modal -->
+      <div id="addNewCourseModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <form class="form" id="addCourse" method="post" action="">
+            <div>
+              <h2>Lägg till kurs</h2>
+            </div>
+
+            <div class="form-text-box">
+              <label for="courseNumberInput">Kursnummer:</label>
+              <input
+                type="text"
+                id="courseNumberInput"
+                autocomplete="off"
+                placeholder="NNN"
+              />
+            </div>
+
+            <div class="form-text-box">
+              <label for="titleInput">Kurstitel:</label>
+              <input type="text" id="titleInput" autocomplete="off" />
+            </div>
+
+            <div class="form-text-box">
+              <label for="descriptionInput">Kursbeskrivning:</label>
+              <input type="text" id="descriptionInput" autocomplete="off" />
+            </div>
+
+            <div class="form-text-box">
+              <label for="courseLengthInput">Kurslängd:</label>
+              <input
+                type="text"
+                id="courseLengthInput"
+                autocomplete="off"
+                placeholder="00 h 00 m"
+              />
+            </div>
+
+            <div class="form-text-box">
+              <label for="coursePrice">Pris:</label>
+              <input type="text" id="coursePrice" autocomplete="off" />
+            </div>
+
+            <div class="save-btn-container">
+              <button class="save-btn" id="saveBtn">Lägg till kurs</button>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -185,5 +171,8 @@
       </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/addCourse.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
