@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "courseNumber": "001",
+        "title": "HTML & CSS",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "36 h 30 m",
+        "price": 9990,
+        "image": "images/html-css-logo.png"
+    },
+    {
+        "id": 2,
+        "courseNumber": "002",
+        "title": "JavaScript",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "60 h 15 m",
+        "price": 9990,
+        "image": "images/javascript-logo.png"
+    },
+    {
+        "id": 3,
+        "courseNumber": "003",
+        "title": "Angular",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "25 h 20 m",
+        "price": 4990,
+        "image": "images/angular-logo.png"
+    },
+    {
+        "id": 4,
+        "courseNumber": "004",
+        "title": "Node.js",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "20 h 30 m",
+        "price": 1990,
+        "image": "images/node-js-logo.png"
+    },
+    {
+        "id": 5,
+        "courseNumber": "005",
+        "title": "Generisk kurs",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "00 h 00 m",
+        "price": 1990,
+        "image": "images/generic-image-course.jpg"
+    },
+    {
+        "id": 6,
+        "courseNumber": "006",
+        "title": "Generisk Kurs",
+        "description": "Lorem ipsum dolor, sit amet consectetur adi pisicing elit. Iddoloribus sint, quae quisquam voluptate atque quis veniam natus deleniti eius.",
+        "courseLength": "00 h 00 m",
+        "price": 1990,
+        "image": "images/generic-image-course.jpg"
+    }
+]
