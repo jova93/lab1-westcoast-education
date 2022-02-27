@@ -1,4 +1,4 @@
-const jsonRequest = new Request("https://github.com/jova93/lab1-westcoast-education/blob/main/data/course.json");
+const jsonRequest = new Request("https://jova93.github.io/api/courses.json");
 
 const courses = [];
 
