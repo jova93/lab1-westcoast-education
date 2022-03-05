@@ -1,0 +1,36 @@
+<div class="product-box">
+
+            <!-- PRODUCT NUMBER -->
+            <p>
+                <span class="product-text-bold">PRODUCT NUMBER: </span><span class="product-number" id="productNumber"></span>
+            </p>
+
+            <!-- PRODUCT IMAGE -->
+            <div class="product-image-container">
+                <img src="images/generic-image-course.jpg" alt="generic image for course">
+            </div>
+
+            <!-- PRODUCT TITLE -->
+            <p>
+                <span class="product-text-bold">PRODUCT TITLE: </span><span class="product-title" id="productTitle"></span>
+            </p>
+
+            <!-- PRODUCT DESCRIPTION -->
+            <p>
+                <span class="product-text-bold">PRODUCT DESCRIPTION: </span><span class="product-description" id="productDescription"></span>
+            </p>
+
+            <!-- PRODUCT DURATION -->
+            <p>
+                <span class="product-text-bold">PRODUCT DURATION (hours): </span><span class="product-duration-hrs" id="productDurationHrs"></span>
+            </p>
+
+            <!-- PRODUCT PRICE -->
+            <p>
+                <span class="product-text-bold">PRODUCT PRICE: </span><span class="product-price" id="productPrice"></span>
+            </p>
+
+            <!-- ADD TO CART BUTTON -->
+            <button class="add-to-cart-btn" id="addToCartBtn">ADD TO CART</button>
+
+        </div>
