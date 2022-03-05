@@ -1,0 +1,197 @@
+/* --- SHOPPING CART CONTAINER START --- */
+.shopping-cart-container {
+  background-color: white;
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding: 0px 0px 40px 0px;
+  transition: 0.5s;
+  box-shadow: -15px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.shopping-cart-header {
+  background-color: black;
+  padding: 20px 0px 20px 0px;
+}
+
+.shopping-cart-header h3 {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+}
+
+.checkout-btn, .close-cart-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+.checkout-btn:hover, .close-cart-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.cart-total {
+  text-align: start;
+  padding-left: 30px;
+}
+
+.cart-total p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.cart-total .cart-total-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* --- SHOPPING CART CONTAINER END --- */
+
+/* --- CART ITEMS START --- */
+.cart-items {
+  background-color: white;
+  padding: 20px 30px 20px 30px;
+}
+/* --- CART ITEMS END --- */
+
+/* --- CART ITEM BOX START --- */
+.cart-item-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.cart-item-box p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.cart-item-box .remove-from-cart-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.cart-item-box .remove-from-cart-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* --- CART ITEM BOX END --- */
+
+/* --- CHECKOUT MODAL START --- */
+/* The Modal (background) */
+.checkout-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.check-out-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+}
+
+/* MODAL HEADER */
+/* TITLE */
+.check-out-modal-content h4 {
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+/* MODAL FOOTER */
+.close-checkout-modal-btn {
+  /* CENTER THE BUTTON */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+.close-checkout-modal-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* --- CHECKOUT MODAL END --- */
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) {
+  .check-out-modal-content {
+    width: 70%; /* Could be more or less, depending on screen size */
+  }
+}
+
+/* Desktops, large screens */
+@media screen and (min-width: 1025px) {
+  .check-out-modal-content {
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+}
+
+/* Extra large screens, TV */
+@media screen and (min-width: 1201px) {
+  .check-out-modal-content {
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+}

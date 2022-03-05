@@ -1,0 +1,467 @@
+body {
+  background-color: #212d3f;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* --- TOP NAVIGATION MENU START --- */
+.top-nav-menu {
+  overflow: hidden;
+  background-color: #1c1c1c;
+  position: relative;
+}
+
+.top-nav-menu #menuLinks {
+  display: none;
+  justify-content: center;
+}
+
+.top-nav-menu .menu-links a:active {
+  background-color: #ddd;
+  color: #1c1c1c;
+}
+
+.top-nav-menu a {
+  color: #ddd;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Space Mono", monospace;
+  display: block;
+  transition-duration: 0.4s;
+}
+
+.top-nav-menu a.icon {
+  color: #ddd;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.top-nav-menu a.icon i {
+  font-size: 1rem;
+}
+
+.logo .active {
+  background-color: #1c1c1c;
+  color: #ddd;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo .active i {
+  font-size: 1rem;
+}
+
+.logo .active .logo-text {
+  margin-left: 10px;
+  font-size: 1rem;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+}
+
+.top-nav-menu .links {
+  display: none;
+}
+/* --- TOP NAVIGATION MENU END --- */
+
+/* --- TOP CONTAINER START --- */
+.top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.top-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* --- CONTAINER END --- */
+
+/* --- ADMIN STUFF CONTAINER START --- */
+.admin-stuff-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.activate-admin-btn {
+  min-width: 300px;
+  background-color: white;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.activate-admin-btn:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.open-add-product-modal-btn {
+  min-width: 300px;
+  display: none;
+  background-color: white;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.open-add-product-modal-btn:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+/* --- ADMIN STUFF CONTAINER END --- */
+
+/* --- SHOPPING CART BUTTON START --- */
+.shopping-cart-btn {
+  min-width: 300px;
+  margin-top: 10px;
+  background-color: white;
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto Mono", monospace;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.shopping-cart-btn:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+/* --- SHOPPING CART BUTTON END --- */
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Space Mono", monospace;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.heroBoxes-container {
+  /* WATCH THIS! */
+  max-height: 600px;
+}
+
+.heroBox1 {
+  /* min-height: 275px; */
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/code-herobox-1.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 300px;
+  padding: 30px 0px;
+}
+
+.heroBox1 h1 {
+  display: block;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.heroBox1 p {
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 0px 60px 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+.card1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card1-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card2-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("images/card3-image.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+.cards-container i {
+  font-size: 40px;
+  color: white;
+  margin-top: 40px;
+}
+
+.cards-container h2 {
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.cards-container p {
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+
+.btn-all-courses {
+  padding: 5px 0px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.btn-all-courses:hover {
+  background-color: white;
+  color: #212d3f;
+}
+
+.testimonials-title {
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 20px 0px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 0px 20px;
+}
+
+.textBox {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.textBox p:last-of-type {
+  font-size: 0.8rem;
+  padding-top: 7px;
+  padding-left: 30px;
+}
+
+.maps {
+  text-align: center;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.maps p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+iframe {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 50px;
+  min-height: 450px;
+}
+
+/* iPads, tablets */
+@media screen and (min-width: 481px) {
+  .logo .active i {
+    font-size: 1.25rem;
+  }
+
+  .logo .active .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .top-nav-menu a.icon i {
+    font-size: 1.25rem;
+  }
+
+  .top-nav-menu a {
+    padding: 14px 16px;
+    font-size: 1.25rem;
+  }
+
+  .textBox {
+    width: 47%;
+  }
+}
+
+/* FLEX WRAPPING BUTTONS */
+@media screen and (min-width: 660px) {
+  .top-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .admin-stuff-container {
+    margin-right: 15px;
+  }
+
+  .shopping-cart-btn {
+    margin-left: 15px;
+    max-height: 36px;
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) {
+  .top-nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .top-nav-menu a:hover {
+    background-color: #ddd;
+    color: #1c1c1c;
+  }
+
+  .logo .active i {
+    font-size: 1.5rem;
+  }
+
+  .logo .active .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .top-nav-menu a.icon {
+    display: none;
+  }
+
+  .top-nav-menu .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .top-nav-menu .links a {
+    font-size: 1.5rem;
+    font-family: "Space Mono", monospace;
+  }
+
+  .textBox {
+    width: 30%;
+  }
+}
+
+/* Desktops, large screens */
+/* @media screen and (min-width: 1025px) {
+} */
+
+/* Extra large screens, TV */
+/* @media screen and (min-width: 1201px) {
+} */
+
+/* FLEX WRAPPING BUTTONS */
+@media screen and (min-width: 1020px) {
+  .top-btn-container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .admin-stuff-container {
+    flex-direction: row;
+    margin-right: 0px;
+  }
+
+  .activate-admin-btn {
+    margin-right: 20px;
+  }
+
+  .open-add-product-modal-btn {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .shopping-cart-btn {
+    margin-left: 20px;
+    max-height: 36px;
+  }
+}

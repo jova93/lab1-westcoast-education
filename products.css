@@ -1,0 +1,147 @@
+/* --- PRODUCT WRAPPERS CONTAINER START --- */
+/* --- PRODUCT WRAPPERS CONTAINER END --- */
+
+/* --- PRODUCT WRAPPER START --- */
+.product-wrapper-1,
+.product-wrapper-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* --- PRODUCT WRAPPER END --- */
+
+/* --- PRODUCT BOX START --- */
+.product-box {
+  max-width: 300px;
+  min-height: 300px;
+
+  /* PADDING */
+  padding: 10px;
+
+  /* MARGIN */
+  margin: 10px;
+
+  /* BACKGROUND COLOR */
+  background-color: white;
+
+  /* BORDER RADIUS */
+  border-radius: 5px;
+
+  /* FONT SIZE OF THE ELEMENTS IN THE PRODUCT BOX */
+  font-size: 1rem;
+
+  /* FONT FAMILY OF THE ELEMENTS IN THE PRODUCT BOX */
+  font-family: "Work Sans", sans-serif;
+
+  box-sizing: border-box;
+}
+
+.product-text-bold {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+}
+
+.product-image-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.product-box .product-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+
+  /* CENTER THE IMAGE */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.product-box p {
+  margin-top: 10px;
+}
+
+.add-to-cart-btn {
+  /* CENTER THE BUTTON */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  background-color: white;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+/* --- DELETE PRODUCT BUTTON OBS! ONLY ADDED TO NEW PRODUCTS --- */
+.delete-product-btn {
+  /* CENTER THE BUTTON */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  background-color: white;
+  color: #1c1c1c;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+
+  padding: 16px 18px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.delete-product-btn:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+/* --- PRODUCT BOX END --- */
+
+/* iPads, tablets */
+@media screen and (min-width: 481px) {
+  .product-box {
+    /* PADDING */
+    padding: 15px;
+
+    /* MARGIN */
+    margin: 15px;
+  }
+}
+
+/* Small screens, laptops */
+@media screen and (min-width: 769px) {
+  .product-box {
+    /* PADDING */
+    padding: 20px;
+
+    /* MARGIN */
+    margin: 20px;
+  }
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WestCoast Education Shop</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <script src="https://kit.fontawesome.com/b0c88c3563.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&family=Space+Mono:wght@400;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="add-product-modal.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION MENU -->
+    <div class="top-nav-menu" id="topNavMenu">
+        <div class="logo">
+            <a href="index.html" class="active">
+                <i class="fas fa-laptop-code"></i>
+                <h1 class="logo-text" id="logoText">WestCoast Education</h1>
+            </a>
+        </div>
+        <div class="menu-links" id="menuLinks">
+            <ul>
+                <li>
+                    <a href="courses.html">Kurser</a>
+                </li>
+                <li>
+                    <a href="about.html">Om Oss</a>
+                </li>
+            </ul>
+        </div>
+        <a href="#" class="icon" onclick="showMenuLinks()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="links">
+            <a href="courses.html">Kurser</a>
+            <a href="about.html">Om Oss</a>
+        </div>
+    </div>
+
+    <div class="top-container">
+        <div class="top-btn-container">
+            <!-- ADMIN STUFF CONTAINER -->
+            <div class="admin-stuff-container">
+                <!-- TOGGLE ADMIN MODE -->
+                <button class="activate-admin-btn" id="activateAdmninBtn">ACTIVATE ADMIN MODE</button>
+                <!-- OPEN MODAL BUTTON -->
+                <button class="open-add-product-modal-btn" id="openAddProductModalBtn">ADD A PRODUCT</button>
+            </div>
+            <!-- SHOPPING CART BUTTON -->
+            <button class="shopping-cart-btn" id="shoppingCartBtn">SHOPPING CART</button>
+        </div>
+    </div>
+
+    <div class="product-wrappers-container">
+        <h2>Populära kurser</h2>
+        <!-- PRODUCT WRAPPER 1 -->
+        <div class="product-wrapper-1" id="productWrapper1"></div>
+        <h2>Aktuella kurser</h2>
+        <!-- PRODUCT WRAPPER 2 -->
+        <div class="product-wrapper-2" id="productWrapper2"></div>
+    </div>
+
+    <!-- ADD PRODUCT MODAL -->
+    <div id="addProductModal" class="add-product-modal">
+        <form class="add-product-modal-content" action="" id="addProductForm">
+
+            <!-- ADD PRODUCT MODAL HEADER -->
+            <div class="add-product-modal-header-container">
+                <!-- CLOSE MODAL -->
+                <span class="close-add-product-modal">&times;</span>
+                <!-- TITLE -->
+                <h4>FILL IN DATA TO ADD A PRODUCT</h4>
+            </div>
+
+            <!-- LABELS AND INPUT -->
+            <div class="add-product-modal-header-labels-and-input-container">
+            
+                <!-- PRODUCT NUMBER -->
+                <label for="productNumberInput">PRODUCT NUMBER:</label>
+                <input type="text" id="productNumberInput" placeholder="e.g. 007">
+
+                <!-- PRODUCT TITLE -->
+                <label for="productTitleInput">PRODUCT TITLE:</label>
+                <input type="text" id="productTitleInput" placeholder="e.g. Title7">
+
+                <!-- PRODUCT DESCRIPTION -->
+                <label for="productDescriptionInput">PRODUCT DESCRIPTION:</label>
+                <input type="text" id="productDescriptionInput" placeholder="e.g. Description7">
+
+                <!-- PRODUCT DURATION (HOURS) -->
+                <label for="productDurationHrsInput">PRODUCT DURATION (HOURS):</label>
+                <input type="text" id="productDurationHrsInput" placeholder="e.g. 7">
+
+                <!-- PRODUCT PRICE -->
+                <label for="productPriceInput">PRODUCT PRICE:</label>
+                <input type="text" id="productPriceInput" placeholder="e.g. 7000">
+
+            </div>
+
+            <!-- ADD PRODUCT MODAL FOOTER -->
+            <div class="add-product-modal-footer-container">
+                <button class="submit-product-btn" id="submitProductBtn">ADD PRODUCT</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- SHOPPING CART -->
+    <div class="shopping-cart-container" id="shoppingCartContainer">
+        <div class="shopping-cart-header">
+            <h3>Kundvagn</h3>
+        </div>
+        <!-- PRODUCTS IN THE CART -->
+        <div class="cart-items" id="cartItems"></div>
+
+        <!-- CART TOTAL -->
+        <div class="cart-total" id="cartTotal">
+            <p><span class="cart-total-bold">TOTAL:</span>&nbsp;<span class="total-result" id="totalResult">0</span>&nbsp;SEK inkl. moms</p>
+        </div>
+
+        <!-- CHECKOUT BUTTON -->
+        <button class="checkout-btn" id="checkoutBtn">CHECKOUT</button>
+
+        <!-- CLOSE BUTTON -->
+        <button class="close-cart-btn" id="closeCartBtn">CLOSE</button>
+    </div>
+
+    <!-- CHECKOUT CONFIRMATION MODAL -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="check-out-modal-content">
+            <h4>THANK YOU FOR YOUR PURCHASE!</h4>
+            <button class="close-checkout-modal-btn" id="closeCheckoutModalBtn">CLOSE</button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/addProduct.js"></script>
+    <script src="js/cart.js"></script>
+
+</body>
+</html>
