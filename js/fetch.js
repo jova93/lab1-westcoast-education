@@ -1,5 +1,5 @@
 //WHERE TO GET THE PRODUCTS FROM
-const jsonRequest = new Request("data/products.json");
+const jsonRequest = new Request("https://jova93.github.io/api/products.json");
 
 //THE ARRAY WHERE WE WILL ADD THE CREATED OBJECTS
 const products = [];
